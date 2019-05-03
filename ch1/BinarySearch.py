@@ -11,7 +11,9 @@ def rank(key, arr):
             return mid
     return -1
 
-def test():
+if __name__ == "__main__":
+    # $> python BinarySearch.py ../data/largeW.txt < ../data/largeT.txt
+    # $> python BinarySearch.py ../data/tinyW.txt < ../data/tinyT.txt
     import sys
     arr = []
     fp = open(sys.argv[1])
@@ -22,7 +24,3 @@ def test():
 
     for key in sys.stdin:
         print(rank(int(key), arr))
-
-if __name__ == "__main__":
-    # $> python BinarySearch.py ../data/largeW.txt < ../data/largeT.txt
-    test()
