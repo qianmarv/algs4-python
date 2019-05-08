@@ -55,6 +55,13 @@ def good_fib(num):
     else:
         return _good_fib(num, 3, 1, 1)
 
+def nice_fib(num):
+    n, pre_2, pre_1 = 1, 1, 1
+    while n < num:
+        pre_2,pre_1 = pre_1, pre_2 + pre_1
+        n += 1
+    return pre_2
+
 if __name__ == "__main__":
     import sys
     from timeit import default_timer as timer
@@ -75,3 +82,9 @@ if __name__ == "__main__":
     result = good_fib(NUM)
     END = timer()
     print("good_fib   = %d ; total elapse: %f" % (result, END - START))
+
+
+    START = timer()
+    result = nice_fib(NUM)
+    END = timer()
+    print("nice_fib   = %d ; total elapse: %f" % (result, END - START))

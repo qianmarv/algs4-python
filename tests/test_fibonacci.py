@@ -6,6 +6,7 @@ import unittest
 from ch1.fibonacci import bad_fib
 from ch1.fibonacci import better_fib
 from ch1.fibonacci import good_fib
+from ch1.fibonacci import nice_fib
 
 #sys.path.append(os.path.dirname(__file__)+"/../")
 
@@ -30,3 +31,7 @@ class TestFibonacci(unittest.TestCase):
     def test_good_fib(self):
         self.assertEqual(good_fib(1), 1)
         self.assertEqual(good_fib(6), 8)
+
+    def test_nice_fib(self):
+        self.assertEqual(nice_fib(1), 1)
+        self.assertEqual(nice_fib(6), 8)
