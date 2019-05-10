@@ -8,7 +8,6 @@ from ch1.fibonacci import better_fib
 from ch1.fibonacci import good_fib
 from ch1.fibonacci import nice_fib
 
-#sys.path.append(os.path.dirname(__file__)+"/../")
 
 
 # print(__file__)

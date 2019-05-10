@@ -12,6 +12,9 @@ def bad_fib(num):
     """
     if num < 3:
         return 1
+    elif num > 40:
+        print("Take too long, stop processing.")
+        return -1
     else:
         return bad_fib(num - 1) + bad_fib(num - 2)
 
