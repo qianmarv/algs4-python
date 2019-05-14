@@ -9,13 +9,7 @@ draws a gray line connecting them.
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-show_flag = True
-
-def set_no_show():
-    show_flag = False
-
-def draw(N, P):
+def draw(N, P, show_flag=True):
     """
     Draw
     """
